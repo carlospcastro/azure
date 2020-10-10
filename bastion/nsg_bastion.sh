@@ -22,4 +22,5 @@ echo "Apply NSG Outbound rules"
 az network nsg rule create --access Allow --destination-address-prefixes '*' --destination-port-ranges 22 3389 --direction Outbound --name AllowSshRdpOutbound --nsg-name $NSG --priority 100 --protocol Tcp --resource-group $RG --source-address-prefixes '*' 
 az network nsg rule create --access Allow --destination-address-prefixes AzureCloud --destination-port-ranges 443 --direction Outbound --name AllowAzureCloudOutbound --nsg-name $NSG --priority 110 --protocol Tcp --resource-group $RG --source-address-prefixes '*' 
 
+# List Bastion in the current subscription
 az network bastion list -o table
