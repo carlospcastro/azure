@@ -1,5 +1,10 @@
 #!/bin/bash
 
+####################################
+# carlospcastro@gmail.com          #
+# Fri Oct 09 19:33:00 CET 2020     #
+####################################
+
 # Setup variables
 
 read -p 'Subscription ID: ' SubscriptionID
